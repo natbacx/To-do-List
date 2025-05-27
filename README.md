@@ -31,6 +31,7 @@ Projeto simples de uma To-Do List feito com HTML, CSS e JavaScript puro. Permite
 ## 📁 Estrutura de Pastas
 /Lista de Tarefas
 │
+
 ├── index.html
 
 ├── style.css
