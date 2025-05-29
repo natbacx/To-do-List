@@ -27,7 +27,8 @@ function exibirTarefas() {
   listaTarefas.innerHTML = ""; // Limpa a lista de tarefas antes de exibir as novas tarefas
 
   for (let i = 0; i < tarefas.length; i++) {
-    let novaTarefa = document.createElement("li"); //Cria um novo elemento de lista (li) formato em lista
+    let novaTarefa = document.createElement("li");
+    novaTarefa.classList.add("list-group-item", "texto-tarefa"); //Cria um novo elemento de lista (li) formato em lista
 
     let textoTarefa = document.createElement("span");
     textoTarefa.textContent = tarefas[i];
@@ -39,13 +40,24 @@ function exibirTarefas() {
     //Botão remover
     let removeButton = document.createElement("button");
     removeButton.textContent = "Remover"; // Cria um botão para remover a tarefa
-    removeButton.classList.add("remover");
+    removeButton.classList.add(
+      "btn",
+      "btn-danger",
+      "btn-sm",
+      "me-2",
+      "botao-remover"
+    );
     removeButton.onclick = () => removerTarefa(i);
 
     // Botão editar
     let botaoEditar = document.createElement("button");
     botaoEditar.textContent = "Editar";
-    botaoEditar.classList.add("editar");
+    botaoEditar.classList.add(
+      "btn",
+      "btn-outline-primary",
+      "btn-sm",
+      "botao-editar"
+    );
     botaoEditar.onclick = () => editarTarefa(i);
 
     botoesContainer.appendChild(botaoEditar);
@@ -98,3 +110,18 @@ function buscarTarefas() {
 }
 tarefas = buscarTarefas();
 exibirTarefas();
+
+//DARK MODE
+const toggleBtn = document.getElementById("toggle-dark-mode");
+const body = document.body;
+const card = document.querySelector(".card");
+
+toggleBtn.addEventListener("click", () => {
+  const dark = body.classList.toggle("bg-dark");
+  body.classList.toggle("text-light");
+  body.classList.toggle("bg-light");
+  body.classList.toggle("text-dark");
+  card.classList.toggle("bg-dark");
+  card.classList.toggle("text-light");
+  toggleBtn.innerHTML = dark ? "☀️" : "🌙";
+});

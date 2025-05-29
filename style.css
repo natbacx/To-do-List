@@ -1,0 +1,91 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#inputTarefa::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+#mensagem {
+  font-weight: bold;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  border-radius: 0;
+  background: transparent;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.bg-dark .list-group-item:hover {
+  background-color: #343a40;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+.mensagem_erro {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.mensagem_sucesso {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+#listaTarefas li {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.bg-dark .list-group-item:hover {
+  background-color: #343a40;
+}
+.input-group {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botões e Estilos*/
+.botoes-container .btn {
+  margin-left: 0.5rem;
+}
+
+.botao-remover {
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(198, 40, 40, 0.08);
+  transition: background o.2s, transform 0.2s;
+}
+
+.botao-remover:hover {
+  background: #b71c1c;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.botao-editar {
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.botao-editar:hover {
+  background: #1976d2;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
