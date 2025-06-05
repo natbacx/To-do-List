@@ -8,7 +8,7 @@ Projeto simples de uma To-Do List feito com HTML, CSS e JavaScript puro. Permite
 - ✅ Adicionar novas tarefas
 - 🖊️ Editar tarefas existentes
 - ❌ Remover tarefas
-- 💅 Interface moderna com tons de roxo e cinza
+- 💅 Interface moderna com tons padronizados
 - 📱 Responsivo para dispositivos móveis
 -  **Persistência de dados com LocalStorage** (as tarefas ficam salvas mesmo ao fechar ou recarregar o navegador)
 
