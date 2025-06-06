@@ -14,19 +14,14 @@ Projeto simples de uma To-Do List feito com HTML, CSS e JavaScript puro. Permite
 
 ## 🎨 Layout
 
-- **Cores principais:**  
-  - Fundo: `#726560`  
-  - Tarefas: `#63426b`  
-  - Botões: `#7e57c2` (Editar), `#e57373` (Remover)  
-  - Bordas dos botões: brancas
-
-- Estilo minimalista, com destaque nos botões e foco na legibilidade das tarefas.
+- Estilo minimalista, com foco na legibilidade das tarefas.
 
 ## 🛠️ Tecnologias
 
 - HTML5  
 - CSS3  
 - JavaScript (Vanilla)
+- Bootstrap
 
 ## 📁 Estrutura de Pastas
 /Lista de Tarefas
