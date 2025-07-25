@@ -53,7 +53,7 @@ Nenhuma dependência externa ou servidor necessário.
 
 
 🤖 
-Feito com 💻 e ☕ por Natielle Bacelar.
+Feito com 💻 e chá por Natielle Bacelar.
 
 
 
